@@ -19,28 +19,23 @@ A modern, responsive portfolio website built with Next.js and Tailwind CSS.
 ### Installation
 
 1. Clone the repository
-   \`\`\`bash
+
+```bash
    git clone https://github.com/yourusername/david-zirinsky-portfolio.git
    cd david-zirinsky-portfolio
-   \`\`\`
+```
 
 2. Install dependencies
-   \`\`\`bash
+
+```bash
    npm install
-
-# or
-
-yarn install
-\`\`\`
+```
 
 3. Run the development server
-   \`\`\`bash
+
+```bash
    npm run dev
-
-# or
-
-yarn dev
-\`\`\`
+```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
@@ -48,13 +43,9 @@ yarn dev
 
 To create a static build of the site:
 
-\`\`\`bash
+```bash
 npm run build
-
-# or
-
-yarn build
-\`\`\`
+```
 
 The static site will be generated in the `out` directory. You can deploy these files to any static hosting service like Vercel, Netlify, GitHub Pages, etc.
 
