@@ -7,7 +7,7 @@ import { ExternalLink } from "lucide-react";
 export default function AndroidApps() {
   const apps = [
     {
-      title: "gbtRecipes",
+      title: "gptRecipes",
       image: "/placeholder.svg?height=300&width=500",
       description:
         "Uses OpenAI's API to generate a recipe for any dish you can think of, including factoring in your dietary restrictions! Bon Appétit! Published: 6/21/23",

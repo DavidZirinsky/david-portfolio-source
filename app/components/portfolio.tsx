@@ -34,7 +34,7 @@ export default function Portfolio() {
     },
     {
       id: 3,
-      title: "gbtRecipes",
+      title: "gptRecipes",
       category: "android",
       image: "/gbtRecipes.png",
       description:
