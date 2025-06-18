@@ -11,6 +11,15 @@ export default function Gallery() {
 
   const projects = [
     {
+      src: "/couponClipper.png",
+      alt: "Coupon Clipper Extension",
+      title: "Coupon Clipper Extension",
+      description:
+        "A Chrome and Firefox extension that lets users clip the first 250 digital coupons at King Soöpers",
+      link: "https://chromewebstore.google.com/detail/coupon-clipper/mhlpjojbmabefhmkodfokajcdblpfoca",
+      github: "https://github.com/DavidZirinsky/Coupon-Clipper",
+    },
+    {
       src: "/inflation.png",
       alt: "Inflation Calculator",
       title: "Inflation Calculator",
@@ -18,14 +27,6 @@ export default function Gallery() {
         "This project brings together my expertise in economics and computer science to build a practical, user-friendly tool. It's a true full-stack inflation calculator with a React frontend, a Python backend, hosted on an AWS Lambda managed via Terraform.",
       link: "https://davidzirinsky.com/inflation/",
       github: "https://github.com/DavidZirinsky/InflationCalc",
-    },
-    {
-      src: "/app.png",
-      alt: "YouTube Thumbnail App",
-      title: "YouTube Thumbnail App",
-      description: "Simple React app to get HD thumbnails of YouTube videos",
-      link: "http://davidzirinsky.com/youtube/",
-      github: "https://github.com/DavidZirinsky/youtube-thumbnail-app",
     },
   ];
 
@@ -86,7 +87,7 @@ export default function Gallery() {
                     className="inline-flex items-center justify-center gap-1 sm:gap-2 bg-gradient-to-r from-purple-700 to-purple-600 hover:from-purple-600 hover:to-purple-500 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm transition-all duration-300 w-full shadow-md shadow-purple-900/20"
                   >
                     <Rocket className="h-3 w-3 sm:h-4 sm:w-4" />
-                    <span>View Project</span>
+                    <span>See It For Yourself</span>
                   </a>
 
                   {project.github && (

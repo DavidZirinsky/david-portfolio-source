@@ -24,6 +24,16 @@ export default function Portfolio() {
     },
     {
       id: 2,
+      title: "Coupon Clipper Extension",
+      category: "web",
+      image: "/couponClipper.png",
+      description:
+        "A Chrome and Firefox extension that lets users clip the first 250 digital coupons at King Soöpers",
+      link: "https://chromewebstore.google.com/detail/coupon-clipper/mhlpjojbmabefhmkodfokajcdblpfoca",
+      github: "https://github.com/DavidZirinsky/Coupon-Clipper",
+    },
+    {
+      id: 3,
       title: "YouTube Thumbnail App",
       category: "web",
       image: "/app.png",
@@ -33,40 +43,39 @@ export default function Portfolio() {
       github: "https://github.com/DavidZirinsky/youtube-thumbnail-app",
     },
     {
-      id: 3,
-      title: "gptRecipes",
+      id: 4,
+      title: "gbtRecipes",
       category: "android",
       image: "/gbtRecipes.png",
       description:
-        "Uses OpenAI's API to generate a recipe for any dish you can think of, including factoring in your dietary restrictions! Bon Appétit! Published: 6/21/23",
+        "Uses OpenAI's API to generate recipes with dietary restrictions",
       link: "https://play.google.com/store/apps/details?id=com.davidz.gbtrecipes",
       github: "https://github.com/DavidZirinsky/gbtRecipies",
     },
     {
-      id: 4,
+      id: 5,
       title: "Pocket Accountant",
       category: "android",
       image: "/pocket.png",
       description:
-        "Android app that graphs a user’s personal finances as well as exports a user’s data to their favorite spreadsheet program. 850+ downloads, published: 1/26/16",
+        "Android app that graphs personal finances and exports data to spreadsheets",
       link: "https://play.google.com/store/apps/details?id=com.DavidZirinsky.PocketAccountant&hl=en",
     },
     {
-      id: 5,
+      id: 6,
       title: "Beer 30",
       category: "android",
-      image: "/beer_30.png",
+      image: "/beer30.png",
       description:
-        "A simple Android Wear app that counts a user’s drinks all from their wrist. 850+ downloads, published: 8/4/15",
+        "Android Wear app that counts a user's drinks from their wrist",
       link: "https://play.google.com/store/apps/details?id=rapidrabbitsoftware.beer30&hl=en",
     },
     {
-      id: 6,
+      id: 7,
       title: "Custom Ad Alternative",
       category: "other",
       image: "/screenshot.png",
-      description:
-        "I made my own alternative to Google's Admob, to better monetize one of my apps.",
+      description: "Alternative to Google's Admob for better app monetization",
       link: "https://github.com/DavidZirinsky/Custom-Ad",
       github: "https://github.com/DavidZirinsky/Custom-Ad",
     },
@@ -105,8 +114,7 @@ export default function Portfolio() {
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <Card className="overflow-hidden rounded-lg border border-zinc-800 shadow-lg shadow-purple-900/10 !bg-transparent">
-                  <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 via-zinc-900 to-zinc-800 rounded-lg -z-10"></div>
+                <Card className="overflow-hidden rounded-lg border border-zinc-800 shadow-lg shadow-purple-900/10 bg-gradient-to-br from-zinc-900 via-zinc-900 to-zinc-800">
                   <CardContent className="p-0">
                     <div className="group relative">
                       <div className="aspect-[16/9] bg-gradient-to-br from-zinc-800 to-zinc-900 overflow-hidden">
@@ -125,25 +133,27 @@ export default function Portfolio() {
                         </p>
 
                         <div className="flex flex-col gap-3 w-full max-w-[200px]">
-                          <a
-                            href={work.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-purple-700 to-purple-600 hover:from-purple-600 hover:to-purple-500 text-white px-4 py-2 rounded-md text-sm transition-all duration-300 w-full shadow-md shadow-purple-900/20"
-                          >
-                            {work.category === "android" ||
-                            work.category === "other" ? (
-                              <>
-                                <PlayCircle className="h-4 w-4" />
-                                Get It On Google Play
-                              </>
-                            ) : (
-                              <>
-                                <Rocket className="h-4 w-4" />
-                                See It For Yourself
-                              </>
-                            )}
-                          </a>
+                          {/* Only show the "Get It On Google Play" or "See It For Yourself" button for android or web categories */}
+                          {work.category !== "other" && (
+                            <a
+                              href={work.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-purple-700 to-purple-600 hover:from-purple-600 hover:to-purple-500 text-white px-4 py-2 rounded-md text-sm transition-all duration-300 w-full shadow-md shadow-purple-900/20"
+                            >
+                              {work.category === "android" ? (
+                                <>
+                                  <PlayCircle className="h-4 w-4" />
+                                  Get It On Google Play
+                                </>
+                              ) : (
+                                <>
+                                  <Rocket className="h-4 w-4" />
+                                  See It For Yourself
+                                </>
+                              )}
+                            </a>
+                          )}
 
                           {work.github && (
                             <a
