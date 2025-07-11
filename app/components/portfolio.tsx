@@ -79,6 +79,16 @@ export default function Portfolio() {
       link: "https://github.com/DavidZirinsky/Custom-Ad",
       github: "https://github.com/DavidZirinsky/Custom-Ad",
     },
+    {
+      id: 8,
+      title: "tl;dw",
+      category: "other",
+      image: "/pypi.svg",
+      description:
+        "A Python package that summarizes lengthy YouTube videos into concise, easy-to-digest summaries.",
+      link: "https://pypi.org/project/tldw/",
+      github: "https://github.com/DavidZirinsky/tl-dw",
+    },
   ];
 
   const filteredWorks = works.filter((work) =>
@@ -133,8 +143,9 @@ export default function Portfolio() {
                         </p>
 
                         <div className="flex flex-col gap-3 w-full max-w-[200px]">
-                          {/* Only show the "Get It On Google Play" or "See It For Yourself" button for android or web categories */}
-                          {work.category !== "other" && (
+                          {/* Only show the "Get It On Google Play" or "See It For Yourself" button for android, web, or pypi categories */}
+                          {(work.category !== "other" ||
+                            work.title === "tl;dw") && (
                             <a
                               href={work.link}
                               target="_blank"
