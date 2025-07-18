@@ -28,8 +28,8 @@ export default function Portfolio() {
       category: "web",
       image: "/couponClipper.png",
       description:
-        "A Chrome and Firefox extension that lets users clip the first 250 digital coupons at King Soöpers",
-      link: "https://chromewebstore.google.com/detail/coupon-clipper/mhlpjojbmabefhmkodfokajcdblpfoca",
+        "A Chrome and Firefox extension that lets users clip the first 250 digital coupons at King Soopers",
+      link: "https://www.kingsooperscoupons.com/",
       github: "https://github.com/DavidZirinsky/Coupon-Clipper",
     },
     {
