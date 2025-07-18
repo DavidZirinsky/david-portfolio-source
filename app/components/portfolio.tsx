@@ -17,6 +17,7 @@ export default function Portfolio() {
       title: "Inflation Calculator",
       category: "web",
       image: "/inflation.png",
+      alt: "Screenshot of the Inflation Calculator web application",
       description:
         "Full-stack inflation calculator with React frontend, Python backend on AWS Lambda",
       link: "https://davidzirinsky.com/inflation/",
@@ -27,6 +28,7 @@ export default function Portfolio() {
       title: "Coupon Clipper Extension",
       category: "web",
       image: "/couponClipper.png",
+      alt: "Logo of the Coupon Clipper browser extension",
       description:
         "A Chrome and Firefox extension that lets users clip the first 250 digital coupons at King Soopers",
       link: "https://www.kingsooperscoupons.com/",
@@ -37,6 +39,7 @@ export default function Portfolio() {
       title: "YouTube Thumbnail App",
       category: "web",
       image: "/app.png",
+      alt: "Screenshot of the YouTube Thumbnail web application",
       description:
         "Simple React webpage to get high definition thumbnails of YouTube videos",
       link: "http://davidzirinsky.com/youtube/",
@@ -47,6 +50,7 @@ export default function Portfolio() {
       title: "gbtRecipes",
       category: "android",
       image: "/gbtRecipes.png",
+      alt: "Screenshot of the gbtRecipes Android application",
       description:
         "Uses OpenAI's API to generate recipes with dietary restrictions",
       link: "https://play.google.com/store/apps/details?id=com.davidz.gbtrecipes",
@@ -57,6 +61,7 @@ export default function Portfolio() {
       title: "Pocket Accountant",
       category: "android",
       image: "/pocket.png",
+      alt: "Screenshot of the Pocket Accountant Android application",
       description:
         "Android app that graphs personal finances and exports data to spreadsheets",
       link: "https://play.google.com/store/apps/details?id=com.DavidZirinsky.PocketAccountant&hl=en",
@@ -66,6 +71,7 @@ export default function Portfolio() {
       title: "Beer 30",
       category: "android",
       image: "/beer30.png",
+      alt: "Screenshot of the Beer 30 Android Wear application",
       description:
         "Android Wear app that counts a user's drinks from their wrist",
       link: "https://play.google.com/store/apps/details?id=rapidrabbitsoftware.beer30&hl=en",
@@ -75,6 +81,7 @@ export default function Portfolio() {
       title: "Custom Ad Alternative",
       category: "other",
       image: "/screenshot.png",
+      alt: "Code snippet demonstrating a custom ad alternative",
       description: "Alternative to Google's Admob for better app monetization",
       link: "https://github.com/DavidZirinsky/Custom-Ad",
       github: "https://github.com/DavidZirinsky/Custom-Ad",
@@ -84,6 +91,7 @@ export default function Portfolio() {
       title: "tl;dw",
       category: "other",
       image: "/pypi.svg",
+      alt: "Logo of the tl;dw Python package on PyPI",
       description:
         "A Python package that summarizes lengthy YouTube videos into concise, easy-to-digest summaries.",
       link: "https://pypi.org/project/tldw/",
@@ -96,7 +104,7 @@ export default function Portfolio() {
   );
 
   return (
-    <section className="bg-black py-20">
+    <section id="portfolio" className="bg-black py-20">
       <div className="container mx-auto px-4">
         <div className="mb-12 flex flex-wrap justify-center gap-4">
           {categories.map((category) => (
@@ -130,7 +138,7 @@ export default function Portfolio() {
                       <div className="aspect-[16/9] bg-gradient-to-br from-zinc-800 to-zinc-900 overflow-hidden">
                         <img
                           src={work.image || "/placeholder.svg"}
-                          alt={work.title}
+                          alt={work.alt || work.title}
                           className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"
                         />
                       </div>
