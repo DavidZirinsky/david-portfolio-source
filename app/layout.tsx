@@ -6,26 +6,28 @@ import "@/styles/globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "David Zirinsky - Software Developer & Artist Portfolio",
+  metadataBase: new URL("https://davidzirinsky.com"),
+  title: "David Zirinsky - Software Developer",
   description:
-    "Explore the software development projects and artistic creations of David Zirinsky. A portfolio showcasing expertise in web development, programming, and digital art.",
+    "Explore the software development projects David Zirinsky. A portfolio showcasing expertise in web development, programming, and Android development.",
   keywords: [
     "David Zirinsky",
     "software developer",
     "web developer",
     "programmer",
-    "artist",
     "portfolio",
-    "digital art",
-    "React",
-    "Next.js",
+    "Python",
+    "Kubernetes",
     "TypeScript",
   ],
   authors: [{ name: "David Zirinsky" }],
+  alternates: {
+    canonical: "https://davidzirinsky.com/",
+  },
   openGraph: {
-    title: "David Zirinsky - Software Developer & Artist Portfolio",
+    title: "David Zirinsky - Software Developer",
     description:
-      "Explore the software development projects and artistic creations of David Zirinsky. A portfolio showcasing expertise in web development, programming, and digital art.",
+      "Explore the software development projects David Zirinsky. A portfolio showcasing expertise in web development, programming, and Android development.",
     url: "https://davidzirinsky.com",
     siteName: "David Zirinsky's Portfolio",
     images: [
@@ -41,9 +43,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "David Zirinsky - Software Developer & Artist Portfolio",
+    title: "David Zirinsky - Software Developer",
     description:
-      "Explore the software development projects and artistic creations of David Zirinsky. A portfolio showcasing expertise in web development, programming, and digital art.",
+      "Explore the software development projects David Zirinsky. A portfolio showcasing expertise in web development, programming, and Android development.",
     creator: "@davidzirinsky",
     images: ["https://davidzirinsky.com/couponClipper.png"],
   },
