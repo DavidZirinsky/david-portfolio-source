@@ -7,9 +7,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   metadataBase: new URL("https://davidzirinsky.com"),
-  title: "David Zirinsky - Software Developer",
-  description:
-    "Explore the software development projects David Zirinsky. A portfolio showcasing expertise in web development, programming, and Android development.",
+  title: "David Zirinsky's Personal Site",
+  description: "Personal website of David Zirinsky, software developer",
   keywords: [
     "David Zirinsky",
     "software developer",
