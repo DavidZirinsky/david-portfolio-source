@@ -13,6 +13,17 @@ export default function Portfolio() {
 
   const works = [
     {
+      id: 0,
+      title: "TLDW",
+      category: "web",
+      image: "/tldw.png",
+      alt: "Screenshot of the youtube tldw web application",
+      description:
+        "Get an AI powered summary of a youtube video in seconds. Made with a React frontend, Python backend",
+      link: "https://www.youtubetldw.com/",
+      github: "https://github.com/DavidZirinsky/tldw-site",
+    },
+    {
       id: 1,
       title: "Inflation Calculator",
       category: "web",
